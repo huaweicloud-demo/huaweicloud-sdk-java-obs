@@ -1,0 +1,21 @@
+spring:
+  datasource:
+    url: jdbc:mysql://114.116.202.204:3316/springtest?useSSL=false&serverTimezone=UTC
+    username: mysql
+    #password: 123456
+    password: mysql@123
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  thymeleaf:
+    cache: false
+    mode: LEGACYHTML5
+mybatis:
+  type-aliases-package: com.login.demo.entity
+  mapper-locations: classpath:com.login.demo.mapper/*.xml
+
+server:
+  #端口号
+  port: 9091
+
+redis:
+  host: 114.116.202.204
+  port: 6389
